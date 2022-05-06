@@ -23,7 +23,7 @@ export default {
   },
   mounted() {
     const userId = getUrlParam('u')
-    location.href = `https://tapnow.fun/?link=https://apps.apple.com/vn/app/tapnow-widget-for-friends/id1612005183&isi=1612005183&ibi=com.sango.widgetphoto&efr=1&u=${userId}`
+    location.href = `https://tapnow.fun/?link=https://me.tapnow.fun?u=${userId}&isi=1612005183&ibi=com.sango.widgetphoto&efr=1`
   },
 }
 </script>
