@@ -1,0 +1,26 @@
+{
+  "name": "tap-now-me",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/remark-prismjs": "^0.2.0",
+    "@vue/babel-preset-app": "^4.5.13",
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "decompress-unzip": "^4.0.1",
+    "gridsome": "^0.7.17",
+    "gridsome-plugin-i18n": "^1.6.0",
+    "typescript": "^4.6.4",
+    "vuetify": "^2.3.0"
+  },
+  "devDependencies": {
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.3",
+    "sass": "^1.23.7",
+    "sass-loader": "^10.1.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

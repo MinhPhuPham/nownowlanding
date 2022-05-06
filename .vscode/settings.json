@@ -1,0 +1,33 @@
+{
+    "editor.rulers": [
+        {
+            "column": 120,
+            "color": "#424142"
+        },
+    ],
+    "files.trimTrailingWhitespace": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+    },
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+    },
+    "[less]": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+    },
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#76715c"
+    },
+    "less.lint.unknownAtRules": "ignore",
+    "less.validate": true,
+    "scss.validate": true,
+}
