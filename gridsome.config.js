@@ -3,6 +3,7 @@
  */
 module.exports = {
   siteName: '',
+  titleTemplate: '%s',
   plugins: [
     {
       use: "@gridsome/source-filesystem",
