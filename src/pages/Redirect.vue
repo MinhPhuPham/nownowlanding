@@ -12,7 +12,7 @@ export default {
   metaInfo() {
     return {
       title: homeData.title[this.locale],
-      meta: [{ name: 'description', content: homeData.description[this.locale] }],
+      // meta: [{ name: 'description', content: homeData.description[this.locale] }],
     }
   },
   data() {

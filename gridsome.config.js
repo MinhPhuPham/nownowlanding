@@ -2,7 +2,7 @@
  * See more: https://gridsome.org/docs/config
  */
 module.exports = {
-  siteName: 'Sango Technologies',
+  siteName: '',
   plugins: [
     {
       use: "@gridsome/source-filesystem",
