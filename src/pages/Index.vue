@@ -23,7 +23,7 @@ export default {
   },
   mounted() {
     const userId = getUrlParam('u')
-    location.href = `https://tapnow.fun/?link=https://me.tapnow.fun/redirect?u=${userId}&isi=1612005183&ibi=com.sango.widgetphoto&efr=1`
+    location.href = `https://tapnow.fun/?link=https://me.tapnow.fun/redirect?u=${userId}&isi=1612005183&ibi=com.sango.widgetphoto`
   },
 }
 </script>
