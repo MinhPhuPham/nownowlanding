@@ -1,12 +1,14 @@
 const currentLang = () => {
-  return Intl.DateTimeFormat()
+  const lang = Intl.DateTimeFormat()
     .resolvedOptions()
     .locale.toLocaleLowerCase()
+
+  return lang.split('-')[0]
 }
 
 const customTrans = (localeData) => {
   const lang = currentLang()
-  return localeData[lang] || localeData['ja-jp']
+  return localeData[lang] || localeData['ja']
 }
 
 module.exports = {

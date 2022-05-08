@@ -16,11 +16,6 @@
           </p>
         </div>
       </div>
-      {{
-        Intl.DateTimeFormat()
-          .resolvedOptions()
-          .locale.toLocaleLowerCase()
-      }}
       <a
         class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         :href="openAppLink"
