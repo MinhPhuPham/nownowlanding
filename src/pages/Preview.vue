@@ -57,15 +57,34 @@ export default {
     onOpenAppOrAppStore() {
       const now = new Date().valueOf()
 
-      setTimeout(() => {
-        if (new Date().valueOf() - now > 100) {
-          return
+      // setTimeout(() => {
+      //   if (new Date().valueOf() - now > 100) {
+      //     return
+      //   }
+
+      //   window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+      // }, 25)
+      var xhr = new XMLHttpRequest()
+
+      xhr.onreadystatechange = () => {
+        console.log(xhr, 'xhr')
+        if (xhr.readyState == 4) {
+          if (hr.status != 200) {
+            window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+          } else {
+            window.location = this.openAppLink
+          }
         }
+      }
 
-        window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
-      }, 25)
+      xhr.open('head', this.openAppLink)
+      xhr.send(null)
 
-      window.location = this.openAppLink
+      // try {
+      //   window.location = this.openAppLink
+      // } catch {
+      //   window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+      // }
     },
   },
 }
