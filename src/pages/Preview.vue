@@ -7,7 +7,7 @@
         <div class="mb-4">
           <img src="/uploads/appIcon.png" class="rounded-lg" width="40" />
         </div>
-        <div class="ml-4">
+        <div>
           <h3>
             {{ customTrans(localeData.title) }}
           </h3>
@@ -85,5 +85,9 @@ export default {
   margin-top: 30px;
   text-align: center;
   height: 100vh;
+}
+.v-btn {
+  background-color: #f4f947 !important;
+  font-weight: bold;
 }
 </style>
