@@ -30,6 +30,7 @@
 <script>
 import localeData from '~/data/locale.yml'
 import { getUrlParam } from '../utils/url-helpers'
+import { currentLang } from '../utils/language'
 
 export default {
   components: {},
@@ -41,7 +42,7 @@ export default {
   },
   data() {
     return {
-      locale: this.$i18n.locale,
+      locale: currentLang(),
       localeData: localeData,
       openAppLink: '',
     }
