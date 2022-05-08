@@ -9,10 +9,10 @@
         </div>
         <div class="ml-4">
           <h3>
-            {{ localeData.title[this.locale] }}
+            {{ customTrans(localeData.title) }}
           </h3>
           <p class="mt-4">
-            {{ localeData.description[this.locale] }}
+            {{ customTrans(localeData.description) }}
           </p>
         </div>
       </div>
@@ -21,7 +21,7 @@
         :href="openAppLink"
         @click="onOpenAppOrAppStore"
       >
-        {{ localeData.openButton[this.locale] }}
+        {{ customTrans(localeData.openButton) }}
       </a>
     </section>
   </Layout>
@@ -29,20 +29,19 @@
 
 <script>
 import localeData from '~/data/locale.yml'
+import { customTrans } from '../utils/language'
 import { getUrlParam } from '../utils/url-helpers'
-import { currentLang } from '../utils/language'
 
 export default {
   components: {},
   metaInfo() {
     return {
-      title: localeData.title[this.locale],
-      description: localeData.description[this.locale],
+      title: customTrans(localeData.title),
+      description: customTrans(localeData.description),
     }
   },
   data() {
     return {
-      locale: currentLang(),
       localeData: localeData,
       openAppLink: '',
     }
@@ -54,6 +53,9 @@ export default {
     window.location = this.openAppLink
   },
   methods: {
+    customTrans(localeData) {
+      return customTrans(localeData)
+    },
     onOpenAppOrAppStore() {
       const now = new Date().valueOf()
 

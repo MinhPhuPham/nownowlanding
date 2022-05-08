@@ -6,13 +6,13 @@
 
 <script>
 import localeData from '~/data/locale.yml'
-import { currentLang } from '../utils/language'
+import { currentLang, customTrans } from '../utils/language'
 
 export default {
   components: {},
   metaInfo() {
     return {
-      title: localeData.title[this.locale],
+      title: customTrans(localeData.title),
     }
   },
   data() {

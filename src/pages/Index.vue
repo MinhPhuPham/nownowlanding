@@ -6,13 +6,14 @@
 
 <script>
 import { getUrlParam } from '../utils/url-helpers'
+import { customTrans } from '../utils/language'
 import localeData from '~/data/locale.yml'
 
 export default {
   components: {},
   metaInfo() {
     return {
-      title: localeData.title[this.locale],
+      title: customTrans(localeData.title),
     }
   },
   data() {
