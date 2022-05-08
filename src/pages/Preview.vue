@@ -71,7 +71,7 @@ export default {
       xhr.onreadystatechange = () => {
         console.log(xhr, 'xhr')
         if (xhr.readyState == 4) {
-          if (hr.status != 200) {
+          if (xhr.status != 200) {
             window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
           } else {
             window.location = this.openAppLink
