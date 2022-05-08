@@ -55,6 +55,8 @@ export default {
   },
   methods: {
     onOpenAppOrAppStore() {
+      const now = new Date().valueOf()
+
       setTimeout(() => {
         if (new Date().valueOf() - now > 100) {
           return
