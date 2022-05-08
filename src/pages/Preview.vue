@@ -47,9 +47,8 @@ export default {
     }
   },
   mounted() {
-    const now = new Date().valueOf()
     const targetLink = getUrlParam('link')
-    this.openAppLink = `com.sango.widgetphoto://${targetLink}`
+    this.openAppLink = `com.sango.widgetphoto://link=${targetLink}`
 
     window.location = this.openAppLink
   },
