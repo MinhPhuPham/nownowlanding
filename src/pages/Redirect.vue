@@ -5,14 +5,13 @@
 </template>
 
 <script>
-import homeData from '~/data/home.yml'
+import localeData from '~/data/locale.yml'
 
 export default {
   components: {},
   metaInfo() {
     return {
-      title: homeData.title[this.locale],
-      // meta: [{ name: 'description', content: homeData.description[this.locale] }],
+      title: localeData.title[this.locale],
     }
   },
   data() {

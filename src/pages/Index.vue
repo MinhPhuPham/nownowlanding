@@ -6,14 +6,13 @@
 
 <script>
 import { getUrlParam } from '../utils/url-helpers'
-import homeData from '~/data/home.yml'
+import localeData from '~/data/locale.yml'
 
 export default {
   components: {},
   metaInfo() {
     return {
-      title: homeData.title[this.locale],
-      // meta: [{ name: 'description', content: homeData.description[this.locale] }],
+      title: localeData.title[this.locale],
     }
   },
   data() {
@@ -23,9 +22,7 @@ export default {
   },
   mounted() {
     const userId = getUrlParam('u')
-    const title = homeData.title[this.locale]
-    const description = homeData.description[this.locale]
-    location.href = `https://tapnow.fun/?link=https://me.tapnow.fun/redirect?u=${userId}&isi=1612005183&ibi=com.sango.widgetphoto&st=${title}&sd=${description}`
+    location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?u=${userId}`
   },
 }
 </script>
