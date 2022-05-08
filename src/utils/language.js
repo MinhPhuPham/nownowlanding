@@ -6,7 +6,7 @@ const currentLang = () => {
 
 const customTrans = (localeData) => {
   const lang = currentLang()
-  return localeData[lang] || localeData['en-gb']
+  return localeData[lang] || localeData['ja-jp']
 }
 
 module.exports = {
