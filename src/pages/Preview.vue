@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :maxHeight="true">
     <section class="preview-contain">
       <!-- Heading -->
       <div class="mb-6">

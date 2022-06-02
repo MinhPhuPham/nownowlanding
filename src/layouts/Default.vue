@@ -1,6 +1,9 @@
 <template>
   <v-app>
-    <v-responsive class="overflow-y-auto" max-height="100vh">
+    <v-responsive
+      :class="{ 'overflow-y-auto': allowMaxHeight, 'overflow-visible': !allowMaxHeight }"
+      :max-height="allowMaxHeight ? '100vh' : ''"
+    >
       <Header />
       <v-main>
         <slot />
@@ -20,6 +23,9 @@ export default {
     Footer,
   },
   computed: {},
+  props: {
+    allowMaxHeight: Boolean,
+  },
 }
 </script>
 

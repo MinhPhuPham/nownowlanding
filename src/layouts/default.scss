@@ -1,15 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-@import "animation";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import 'animation';
 @media (min-width: 1904px) {
   .container {
     max-width: 1185px !important;
   }
 }
 
+$bgPrimaryColor: #202b39;
+
 a {
   text-decoration: none;
 }
 
 .v-application {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.view-contain {
+  background-color: $bgPrimaryColor;
+  color: #fff;
+}
+
+.sticky-logo {
+  position: sticky;
+  background-color: $bgPrimaryColor;
+  top: 0;
 }
