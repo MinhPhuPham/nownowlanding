@@ -1,3 +1,26 @@
 {
+    "menu": {
+        "term_of_service": "サービス期間",
+        "privacy_policy": "プライバシーポリシー"
+    },
+    "home": {
+        "title": "仲間に愛を届ける",
+        "description": "友人として親密になり、たくさん笑い、夢を共有しました。時間をかけて愛を伝えてくれてありがとう、友よ。",
+        "counter_downloads": "ダウンロード",
+        "counter_transaction": "共有された写真",
+        "counter_ratting": "評価",
+        "coming": "特徴と私たちの機能"
+    },
+    "termOfService": {
+        "title": "規約と条件",
+        "description": "いくつかの用語は、アプリケーションの開発に役立ちます"
+    },
+    "privacyPolicy": {
+        "title": "プライバシーポリシー",
+        "description": "私たちは常に個人情報を確保し、個人データの使用に関する法律を遵守します。"
+    },
+    "footer": {
+        "end_title": "何を待っていますか？ ダウンロード中！"
+    },
     "page_not_found": "ページが見つかりません。"
 }

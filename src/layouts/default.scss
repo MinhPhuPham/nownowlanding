@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import 'animation';
+@import '~/assets/styles/index.scss';
 @media (min-width: 1904px) {
   .container {
     max-width: 1185px !important;
@@ -17,12 +18,67 @@ a {
 }
 
 .view-contain {
-  background-color: $bgPrimaryColor;
-  color: #fff;
+  color: $bgPrimaryColor;
 }
 
 .sticky-logo {
   position: sticky;
   background-color: $bgPrimaryColor;
   top: 0;
+}
+
+.container--fluid {
+  max-width: 1361px !important;
+  width: 94% !important;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.user-layout-text {
+  h1 {
+    font-size: 2.2em;
+    margin-top: 0;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+
+    @include breakpoints-down('lg') {
+      font-size: 2em;
+    }
+
+    @include breakpoints-down('sm') {
+      font-size: 1.6em;
+    }
+  }
+
+  a {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.fw-mbold {
+  font-weight: 600;
 }

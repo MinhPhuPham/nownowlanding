@@ -28,8 +28,8 @@ module.exports = {
           'ja-jp': 'jp',
           'en-gb': 'en'
         },
-        fallbackLocale: 'ja-jp',
-        defaultLocale: 'ja-jp',
+        fallbackLocale: 'en-gb',
+        defaultLocale: 'en-gb',
         enablePathRewrite: true,
         rewriteDefaultLanguage: false,
         messages: {

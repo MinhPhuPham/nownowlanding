@@ -1,3 +1,26 @@
 {
+    "menu": {
+        "term_of_service": "Term Of Service",
+        "privacy_policy": "Privacy Policy"
+    },
+    "home": {
+        "title": "Bring love to your friends",
+        "description": "We grew closer as friends, laughed a lot, and shared our dreams. Thank you for taking the time to show your love, friend.",
+        "counter_downloads": "downloads",
+        "counter_transaction": "Photos Shared",
+        "counter_ratting": "rating",
+        "coming": "Features and Our Functions"
+    },
+    "termOfService": {
+        "title": "Terms and Conditions",
+        "description": "A few terms help the application develop more"
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "description": "We always ensure personal information and comply with the law on the use of personal data."
+    },
+    "footer": {
+        "end_title": "What are you waiting for? Download Now!"
+    },
     "page_not_found": "Page not found"
 }

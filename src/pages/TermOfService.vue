@@ -1,11 +1,6 @@
 <template>
-  <Layout>
-    <section class="view-contain">
-      <div class="py-4 d-flex align-center sticky-logo">
-        <img src="/uploads/appIcon.png" class="rounded-lg" width="40" />
-        <h3 class="my-0 pl-2">{{ customTrans(localeData.title) }}</h3>
-      </div>
-
+  <Layout :title="$t('termOfService.title')" :content="$t('termOfService.description')">
+    <section class="view-contain container--fluid user-layout-text">
       <h1 style="margin-top: 0">Terms and Conditions</h1>
       <p>Last updated: March 15, 2022</p>
       <p>
@@ -441,13 +436,6 @@ export default {
       localeData: localeData,
       openAppLink: '',
     }
-  },
-  mounted() {
-    let style = document.createElement('link')
-    style.type = 'text/css'
-    style.rel = 'stylesheet'
-    style.href = 'https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css'
-    document.head.appendChild(style)
   },
   methods: {
     customTrans(localeData) {

@@ -3,6 +3,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 
 import "vuetify/dist/vuetify.min.css";
 import colors from "vuetify/lib/util/colors";
+import options from 'vue-countup-directive/src';
 
 export default function(Vue, { appOptions, head }) {
   head.link.push({
@@ -36,4 +37,5 @@ export default function(Vue, { appOptions, head }) {
   Vue.use(Vuetify);
   appOptions.vuetify = new Vuetify(opts);
   Vue.component("Layout", DefaultLayout);
+  Vue.directive('countUp', options);
 }
