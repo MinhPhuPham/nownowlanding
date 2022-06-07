@@ -13,7 +13,7 @@
               width="40"
             />
             <v-toolbar-title class="hidden-sm-and-down font-weight-bold" style="color: #11182A">
-              Tap Now
+              TapNow
             </v-toolbar-title>
           </g-link>
         </div>
