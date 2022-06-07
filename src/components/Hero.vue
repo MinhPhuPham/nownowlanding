@@ -28,13 +28,9 @@
         </v-col>
 
         <v-col cols="12" :sm="5" class="text-md-left text-center">
-          <figure class="hero__preview-app" data-v-11687956="">
-            <img
-              src="https://res.cloudinary.com/imajin/image/upload/v1572030940/mobile/phone-right_e2ywhd.png"
-              alt="screen"
-              data-v-11687956=""
-            />
-          </figure>
+          <v-carousel class="carousel-custom" :show-arrows-on-hover="true" :hide-delimiter-background="true">
+            <v-carousel-item v-for="(item, i) in 4" :key="i" :src="`/images/welcome${i + 1}.png`"> </v-carousel-item>
+          </v-carousel>
         </v-col>
       </v-row>
     </v-container>
@@ -58,11 +54,11 @@ export default {
 
 .hero {
   margin-bottom: 40px;
-  padding: 120px 0;
+  padding: 80px 0;
   color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #111826;
+  background-color: #000000;
   background-position: right;
 
   &__caption {
@@ -92,6 +88,20 @@ export default {
     &__caption {
       font-size: 40px;
     }
+  }
+}
+</style>
+
+<style lang="scss">
+.carousel-custom {
+  height: 550px !important;
+
+  .v-image__image--cover {
+    background-size: contain;
+  }
+
+  .v-btn--active {
+    color: #f4f947 !important;
   }
 }
 </style>

@@ -4,12 +4,17 @@
       :class="{ 'overflow-y-auto': allowMaxHeight, 'overflow-visible': !allowMaxHeight }"
       :max-height="allowMaxHeight ? '100vh' : ''"
     >
-      <Header />
-      <v-main>
-        <Hero :title="title" :content="content" />
+      <template v-if="standAlone">
         <slot />
-      </v-main>
-      <Footer />
+      </template>
+      <template v-else>
+        <Header />
+        <v-main>
+          <Hero :title="title" :content="content" />
+          <slot />
+        </v-main>
+        <Footer />
+      </template>
     </v-responsive>
     <v-btn v-scroll="onScroll" v-show="fab" fab dark fixed bottom right color="primary" @click="toTop">
       <v-icon>keyboard_arrow_up</v-icon>
@@ -33,6 +38,7 @@ export default {
     allowMaxHeight: Boolean,
     title: String,
     content: String,
+    standAlone: Boolean,
   },
   data() {
     return {

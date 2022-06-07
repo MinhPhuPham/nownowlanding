@@ -13,7 +13,7 @@
               width="40"
             />
             <v-toolbar-title class="hidden-sm-and-down font-weight-bold" style="color: #11182A">
-              T<span style="color: #ffc803">a</span>p N<span style="color: #ffc803">o</span>w
+              Tap Now
             </v-toolbar-title>
           </g-link>
         </div>
