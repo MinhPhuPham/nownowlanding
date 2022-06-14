@@ -31,6 +31,10 @@ export default function(Vue, { appOptions, head, isClient }) {
     property: 'og:image:height',
     content: '1024'
   })
+  head.meta.push({
+    name: 'keywords',
+    content: 'tapnow, TapNow, TAPNOW, Tapnow, widget, Widget Tapnow, Widget friends, widget for friend'
+  })
 
   const opts = {
     icons: {
