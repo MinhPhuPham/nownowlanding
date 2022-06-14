@@ -14,6 +14,24 @@ export default function(Vue, { appOptions, head, isClient }) {
     href: "https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
   });
 
+  // meta tag image logo
+  head.meta.push({
+    name: 'og:image',
+    content: 'https://me.tapnow.fun/uploads/appIcon.png'
+  })
+  head.meta.push({
+    property: 'og:image:type',
+    content: 'image/png'
+  })
+  head.meta.push({
+    property: 'og:image:width',
+    content: '1024'
+  })
+  head.meta.push({
+    property: 'og:image:height',
+    content: '1024'
+  })
+
   const opts = {
     icons: {
       iconfont: "mdi" // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
