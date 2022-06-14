@@ -16,7 +16,7 @@ export default function(Vue, { appOptions, head, isClient }) {
 
   // meta tag image logo
   head.meta.push({
-    name: 'og:image',
+    property: 'og:image',
     content: 'https://me.tapnow.fun/uploads/appIcon.png'
   })
   head.meta.push({
