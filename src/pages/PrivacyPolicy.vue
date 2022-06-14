@@ -1139,6 +1139,13 @@ export default {
     return {
       title: customTrans(localeData.privacyPolicyTitle),
       description: customTrans(localeData.description),
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: customTrans(localeData.description),
+        },
+      ],
     }
   },
   data() {
