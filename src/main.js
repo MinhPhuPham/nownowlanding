@@ -25,11 +25,11 @@ export default function(Vue, { appOptions, head, isClient }) {
   })
   head.meta.push({
     property: 'og:image:width',
-    content: '1024'
+    content: '512'
   })
   head.meta.push({
     property: 'og:image:height',
-    content: '1024'
+    content: '512'
   })
   head.meta.push({
     name: 'keywords',
