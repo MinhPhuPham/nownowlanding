@@ -40,11 +40,6 @@ export default {
       description: customTrans(localeData.description),
       meta: [
         {
-          key: 'og:image',
-          name: 'og:image',
-          content: 'https://me.tapnow.fun/uploads/appIcon.png',
-        },
-        {
           key: 'description',
           name: 'description',
           content: customTrans(localeData.description),

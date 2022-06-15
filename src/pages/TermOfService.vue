@@ -429,13 +429,6 @@ export default {
     return {
       title: customTrans(localeData.termOfServiceTitle),
       description: customTrans(localeData.description),
-      meta: [
-        {
-          key: 'og:image',
-          name: 'og:image',
-          content: 'https://me.tapnow.fun/uploads/appIcon.png',
-        },
-      ],
     }
   },
   data() {

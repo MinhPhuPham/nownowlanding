@@ -17,7 +17,7 @@ export default function(Vue, { appOptions, head, isClient }) {
   // meta tag image logo
   head.meta.push({
     property: 'og:image',
-    content: 'https://me.tapnow.fun/uploads/appIcon.png'
+    content: 'https://me.tapnow.fun/uploads/tapnow_logo.png'
   })
   head.meta.push({
     property: 'og:image:type',
@@ -25,11 +25,11 @@ export default function(Vue, { appOptions, head, isClient }) {
   })
   head.meta.push({
     property: 'og:image:width',
-    content: '512'
+    content: '1024'
   })
   head.meta.push({
     property: 'og:image:height',
-    content: '512'
+    content: '1024'
   })
   head.meta.push({
     name: 'keywords',
