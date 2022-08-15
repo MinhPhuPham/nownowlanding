@@ -31,6 +31,7 @@
 import localeData from '~/data/locale.yml'
 import { customTrans } from '../utils/language'
 import { getUrlParam } from '../utils/url-helpers'
+import PlatformUtil from '../utils/platform-detection'
 
 export default {
   components: {},
@@ -56,7 +57,6 @@ export default {
   mounted() {
     const targetLink = getUrlParam('link')
     this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
-
     window.location = this.openAppLink
   },
   methods: {
@@ -71,7 +71,12 @@ export default {
         console.log(xhr, 'xhr')
         if (xhr.readyState == 4) {
           if (xhr.status != 200) {
-            window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+            if (PlatformUtil.isIOSPaltform()) {
+              window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+            } else {
+              // TODO: open Google Play store if android
+              window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+            }
           } else {
             window.location = this.openAppLink
           }
