@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sangotech.tapnow",
+      "sha256_cert_fingerprints": [
+        "D6:8E:67:CE:4F:BC:BD:86:E7:14:05:98:54:64:BC:20:78:2C:CE:B9:40:7F:77:11:E3:23:24:A5:39:14:0C:55"
+      ]
+    }
+  }
+]
