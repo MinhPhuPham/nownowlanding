@@ -56,7 +56,11 @@ export default {
   },
   mounted() {
     const targetLink = getUrlParam('link')
-    this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
+    if (PlatformUtil.isIOSPaltform()) {
+      this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
+    } else {
+      this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
+    }
     window.location = this.openAppLink
   },
   methods: {
