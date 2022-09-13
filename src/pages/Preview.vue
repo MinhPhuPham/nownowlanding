@@ -78,8 +78,7 @@ export default {
             if (PlatformUtil.isIOSPaltform()) {
               window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
             } else {
-              // TODO: open Google Play store if android
-              window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+              window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             }
           } else {
             window.location = this.openAppLink

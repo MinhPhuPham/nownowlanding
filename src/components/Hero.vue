@@ -21,7 +21,7 @@
               <img width="160" src="/images/mobile/app-store.png" alt="app store" />
             </g-link>
 
-            <g-link to="/term-of-service/" color="primary">
+            <g-link color="primary" href="https://play.google.com/store/apps/details?id=com.sangotech.tapnow">
               <img width="160" src="/images/mobile/play-store.png" alt="app store" />
             </g-link>
           </div>
