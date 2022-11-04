@@ -2,7 +2,7 @@
   <div class="hero">
     <v-container fluid>
       <v-row no-gutters>
-        <v-col cols="12" :sm="7" class="text-md-left text-center">
+        <v-col cols="12" class="text-center">
           <p class="hero__sub-caption"></p>
           <h1 class="hero__caption">
             {{ title }}
@@ -12,7 +12,7 @@
             {{ content }}
           </p>
 
-          <div class="d-flex">
+          <div class="d-flex justify-center">
             <g-link
               class="pr-4"
               href="https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183"
@@ -25,12 +25,6 @@
               <img width="160" src="/images/mobile/play-store.png" alt="app store" />
             </g-link>
           </div>
-        </v-col>
-
-        <v-col cols="12" :sm="5" class="text-md-left text-center">
-          <v-carousel class="carousel-custom" :show-arrows-on-hover="true" :hide-delimiter-background="true">
-            <v-carousel-item v-for="(item, i) in 4" :key="i" :src="`/images/welcome${i + 1}.png`"> </v-carousel-item>
-          </v-carousel>
         </v-col>
       </v-row>
     </v-container>
@@ -88,20 +82,6 @@ export default {
     &__caption {
       font-size: 40px;
     }
-  }
-}
-</style>
-
-<style lang="scss">
-.carousel-custom {
-  height: 550px !important;
-
-  .v-image__image--cover {
-    background-size: contain;
-  }
-
-  .v-btn--active {
-    color: #f4f947 !important;
   }
 }
 </style>

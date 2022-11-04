@@ -1,72 +1,16 @@
 <template>
   <v-container fluid>
-    <h2 class="text-center use-text-title">Features</h2>
+    <h2 class="text-center use-text-title2">{{ $t('home.features') }}</h2>
 
-    <!-- Start - Share your status to your friends -->
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="illustration-left">
-          <svg class="deco-primary">
-            <use xlink:href="/images/deco-feature.svg#main" />
-          </svg>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="text">
-          <h4>
-            Share your status to your friends
-          </h4>
-          <p class="use-text-subtitle2">
-            {{ $t('mobileLanding.feature_desc1') }}
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- End - Share your status to your friends -->
-
-    <!-- Start - Can see your image status more fast -->
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="text">
-          <h4>
-            Can see your image status more fast
-          </h4>
-          <p class="use-text-subtitle2">
-            {{ $t('mobileLanding.feature_desc1') }}
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="illustration-left">
-          <svg class="deco-primary">
-            <use xlink:href="/images/deco-feature.svg#main" />
-          </svg>
-        </div>
-      </div>
-    </div>
-    <!-- End - Can see your image status more fast -->
-
-    <!-- Start - Rewind moments and view histories -->
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="illustration-left">
-          <svg class="deco-primary">
-            <use xlink:href="/images/deco-feature.svg#main" />
-          </svg>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="text">
-          <h4>
-            Rewind moments and view histories
-          </h4>
-          <p class="use-text-subtitle2">
-            {{ $t('mobileLanding.feature_desc1') }}
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- End - Rewind moments and view histories -->
+    <v-carousel height="800" class="carousel-custom" :show-arrows-on-hover="true" :hide-delimiter-background="true">
+      <v-carousel-item v-for="(item, i) in 6" :key="i">
+        <v-sheet class="justify-center" height="100%">
+          <v-row align="center" class="fill-height" justify="center">
+            <img :src="`/images/tapnow-widget-${i + 1}.webp`" class="carousel-item-img" />
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
   </v-container>
 </template>
 
@@ -77,16 +21,31 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.illustration-left {
-  position: relative;
-}
-.deco-primary {
-  width: 450px;
-  height: 450px;
-  position: absolute;
-  top: 80px;
+<style lang="scss">
+.carousel-custom {
+  padding-bottom: 50px;
+  .v-image__image--cover {
+    background-size: contain;
+  }
 
-  fill: #d1c4e9;
+  .v-btn--active {
+    color: #f4f947 !important;
+  }
+
+  .v-carousel__controls {
+    .v-icon {
+      font-size: 14px !important;
+      color: #000 !important;
+    }
+    .v-carousel__controls__item {
+      margin: 0 !important;
+    }
+  }
+}
+.carousel-item-img {
+  border-radius: 40px;
+  margin: 40px;
+  width: 300px;
+  max-width: 100%;
 }
 </style>

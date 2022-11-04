@@ -1,8 +1,8 @@
 <template>
-  <div class="counter-wrap">
+  <div class="counter-wrap mt-16">
     <v-container class="max-md">
       <v-row justify="center" align="center" class="counter-inner spacing6">
-        <v-col md="4" class="px-6">
+        <v-col md="4" sm="12" class="px-6">
           <div class="counter-item">
             <div v-if="loaded" class="text">
               <h3 class="use-text-title2">
@@ -10,7 +10,7 @@
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 100,
+                    endValue: 200,
                     options: { duration: 1 },
                   }"
                 />K
@@ -24,7 +24,7 @@
             </div>
           </div>
         </v-col>
-        <v-col md="4" class="px-6">
+        <v-col md="4" sm="12" class="px-6">
           <div class="counter-item">
             <div v-if="loaded" class="text">
               <h3 class="use-text-title2">
@@ -32,7 +32,7 @@
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 50,
+                    endValue: 1000,
                     options: { duration: 1 },
                   }"
                 />K
@@ -46,7 +46,7 @@
             </div>
           </div>
         </v-col>
-        <v-col md="4" class="px-6">
+        <v-col md="4" sm="12" class="px-6">
           <div class="counter-item">
             <div v-if="loaded" class="text">
               <h3 class="use-text-title2">
@@ -54,7 +54,7 @@
                   v-countUp:onWindowScroll.once="{
                     watchedElId: 'watched_counter',
                     startValue: 0,
-                    endValue: 10,
+                    endValue: 3,
                     options: { duration: 1 },
                   }"
                 />K

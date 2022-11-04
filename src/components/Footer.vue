@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless class="mt-5">
+  <v-footer dark padless>
     <v-container class="footer" fluid>
       <div class="footer__end-question text-center">
         <h4 class="use-text-subtitle pb-4">
@@ -24,7 +24,7 @@
 
         <v-spacer />
 
-        <v-btn href="https://github.com/sango-tech" target="_blank" fab text small style="fill: white">
+        <v-btn href="https://www.tiktok.com/@tapnow_official" target="_blank" fab text small style="fill: white">
           <svg role="img" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>TikTok</title>
             <path
@@ -32,14 +32,11 @@
             />
           </svg>
         </v-btn>
-        <v-btn href="https://github.com/sango-tech" target="_blank" fab text small>
+        <v-btn href="https://www.instagram.com/tapnow_official" target="_blank" fab text small>
           <v-icon>mdi-instagram</v-icon>
         </v-btn>
-        <v-btn href="https://github.com/sango-tech" target="_blank" fab text small>
-          <v-icon>mdi-github</v-icon>
-        </v-btn>
-        <v-btn href="https://linkedin.com/company/sango-tech" target="_blank" fab text small>
-          <v-icon>mdi-linkedin</v-icon>
+        <v-btn href="https://twitter.com/tapnow_app" target="_blank" fab text small>
+          <v-icon>mdi-twitter</v-icon>
         </v-btn>
       </div>
     </v-container>
