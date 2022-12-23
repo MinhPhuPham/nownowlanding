@@ -44,6 +44,11 @@ export default {
     if (userId) {
       location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?u=${userId}`
     }
+
+    const groupId = getUrlParam('g')
+    if (groupId) {
+      location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?g=${groupId}`
+    }
   },
 }
 </script>
