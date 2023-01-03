@@ -43,6 +43,12 @@ export default {
     const userId = getUrlParam('u')
     if (userId) {
       location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?u=${userId}`
+      return
+    }
+
+    const sharedId = getUrlParam('shareId')
+    if (sharedId) {
+      location.href = `https://tapno.onelink.me/pJnR/trdnhuk0`
     }
   },
 }
