@@ -50,6 +50,11 @@ export default {
     if (sharedId) {
       location.href = `https://tapno.onelink.me/pJnR/trdnhuk0`
     }
+
+    const groupId = getUrlParam('g')
+    if (groupId) {
+      location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?g=${groupId}`
+    }
   },
 }
 </script>
