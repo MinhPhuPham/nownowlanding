@@ -49,6 +49,7 @@ export default {
     const sharedId = getUrlParam('shareId')
     if (sharedId) {
       location.href = `https://tapno.onelink.me/pJnR/trdnhuk0`
+      return
     }
 
     const groupId = getUrlParam('g')
