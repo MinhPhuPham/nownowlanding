@@ -89,7 +89,7 @@ export default {
             alert('errrorrr')
             alert('3-xhr.responseText:' + xhr.responseText)
             alert('4-xhr.getAllResponseHeaders' + xhr.getAllResponseHeaders())
-            window.location = `com.sango.widgetphoto://?link=${targetLink}`
+            // window.location = `com.sango.widgetphoto://?link=${targetLink}`
           } else {
             alert('success', xhr.readyState, xhr.getAllResponseHeaders())
             // window.location = this.openAppLink
