@@ -70,7 +70,6 @@ export default {
       }
     },
     onOpenAppOrAppStore() {
-      const now = new Date().valueOf()
       var xhr = new XMLHttpRequest()
 
       xhr.onreadystatechange = () => {
@@ -83,14 +82,12 @@ export default {
             //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             // }
             // window.location = `com.sango.widgetphoto://?link=${targetLink}`
+            alert('success')
           } else {
             // window.location = this.openAppLink
           }
         }
       }
-
-      alert('hihi')
-
       xhr.open('head', this.openAppLink, false)
       xhr.send(null)
     },
