@@ -98,7 +98,7 @@ export default {
         }
       }
 
-      alert('5-xhr.open')
+      alert(`5-xhr.open ${this.openAppLink}`)
       xhr.open('head', this.openAppLink, false)
       xhr.send(null)
     },
