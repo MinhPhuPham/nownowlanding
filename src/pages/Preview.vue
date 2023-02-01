@@ -55,17 +55,26 @@ export default {
     }
   },
   mounted() {
-    const targetLink = getUrlParam('link')
-    if (PlatformUtil.isIOSPaltform()) {
-      this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
-    } else {
-      this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
-    }
-    window.location = this.openAppLink
+    // const targetLink = getUrlParam('link')
+    // if (PlatformUtil.isIOSPaltform()) {
+    //   this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
+    // } else {
+    //   this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
+    //   window.location = this.openAppLink
+    // }
+    this.onDetectLinkForOpen()
   },
   methods: {
     customTrans(localeData) {
       return customTrans(localeData)
+    },
+    onDetectLinkForOpen() {
+      const targetLink = getUrlParam('link')
+      if (PlatformUtil.isIOSPaltform()) {
+        this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
+      } else {
+        this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
+      }
     },
     onOpenAppOrAppStore() {
       const now = new Date().valueOf()
