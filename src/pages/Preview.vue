@@ -64,7 +64,7 @@ export default {
     onDetectLinkForOpen() {
       const targetLink = getUrlParam('link')
       if (PlatformUtil.isIOSPaltform()) {
-        this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
+        this.openAppLink = `com.sango.widgetphoto://?link=${targetLink}`
       } else {
         this.openAppLink = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
       }
@@ -82,14 +82,14 @@ export default {
             // } else {
             //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             // }
-            window.location = `com.sangotech.tapnow://me.tapnow.fun/preview/?link=${targetLink}`
+            // window.location = `com.sango.widgetphoto://?link=${targetLink}`
           } else {
-            window.location = this.openAppLink
+            // window.location = this.openAppLink
           }
         }
       }
 
-      // alert('hihi')
+      alert('hihi')
 
       xhr.open('head', this.openAppLink, false)
       xhr.send(null)
