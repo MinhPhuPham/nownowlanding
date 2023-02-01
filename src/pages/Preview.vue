@@ -82,8 +82,9 @@ export default {
             //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             // }
             // window.location = `com.sango.widgetphoto://?link=${targetLink}`
-            alert('success')
+            alert('errrorrr', xhr.readyState, xhr.responseText)
           } else {
+            alert('success', xhr.readyState, xhr.responseText)
             // window.location = this.openAppLink
           }
         }
