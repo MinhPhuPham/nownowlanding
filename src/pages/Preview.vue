@@ -74,15 +74,21 @@ export default {
 
       xhr.onreadystatechange = () => {
         console.log(xhr, 'xhr')
+
+        alert('1-xhr.readyState:' + xhr.readyState)
+
         if (xhr.readyState == 4) {
-          alert('xhr.status', xhr.status)
+          alert('2-xhr.status' + xhr.status)
+
           if (xhr.status != 200) {
             // if (PlatformUtil.isIOSPaltform()) {
             //   window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
             // } else {
             //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             // }
-            alert('errrorrr', xhr.responseText)
+            alert('errrorrr')
+            alert('3-xhr.responseText:' + xhr.responseText)
+            alert('4-xhr.getAllResponseHeaders' + xhr.getAllResponseHeaders())
             window.location = `com.sango.widgetphoto://?link=${targetLink}`
           } else {
             alert('success', xhr.readyState, xhr.getAllResponseHeaders())
@@ -90,6 +96,8 @@ export default {
           }
         }
       }
+
+      alert('5-xhr.open')
       xhr.open('head', this.openAppLink, false)
       xhr.send(null)
     },
