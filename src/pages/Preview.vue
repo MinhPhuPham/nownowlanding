@@ -71,7 +71,6 @@ export default {
     },
     onOpenAppOrAppStore() {
       var xhr = new XMLHttpRequest()
-
       xhr.onreadystatechange = () => {
         console.log(xhr, 'xhr')
 
@@ -89,7 +88,9 @@ export default {
             alert('errrorrr')
             alert('3-xhr.responseText:' + xhr.responseText)
             alert('4-xhr.getAllResponseHeaders' + xhr.getAllResponseHeaders())
-            // window.location = `com.sango.widgetphoto://?link=${targetLink}`
+
+            const targetLink = getUrlParam('link')
+            window.location = `com.sango.widgetphoto://?link=${targetLink}`
           } else {
             alert('success', xhr.readyState, xhr.getAllResponseHeaders())
             // window.location = this.openAppLink
