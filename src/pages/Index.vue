@@ -42,7 +42,7 @@ export default {
   mounted() {
     const userId = getUrlParam('u')
     if (userId) {
-      location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?u=${userId}`
+      location.href = `https://dulcet-rabanadas-26b071.netlify.app/preview?link=https://dulcet-rabanadas-26b071.netlify.app?u=${userId}`
       return
     }
 
@@ -54,7 +54,7 @@ export default {
 
     const groupId = getUrlParam('g')
     if (groupId) {
-      location.href = `https://me.tapnow.fun/preview?link=https://me.tapnow.fun?g=${groupId}`
+      location.href = `https://dulcet-rabanadas-26b071.netlify.app/preview?link=https://dulcet-rabanadas-26b071.netlify.app?g=${groupId}`
     }
   },
 }
