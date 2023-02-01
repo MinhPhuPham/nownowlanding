@@ -83,7 +83,7 @@ export default {
             //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
             // }
             window.location = `com.sango.widgetphoto://?link=${targetLink}`
-            alert('errrorrr', xhr.readyState, xhr.getAllResponseHeaders())
+            alert('errrorrr', xhr.responseText)
           } else {
             alert('success', xhr.readyState, xhr.getAllResponseHeaders())
             // window.location = this.openAppLink
