@@ -84,11 +84,13 @@ export default {
         console.log(xhr, 'xhr')
         if (xhr.readyState == 4) {
           if (xhr.status != 200) {
-            if (PlatformUtil.isIOSPaltform()) {
-              window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
-            } else {
-              window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
-            }
+            // if (PlatformUtil.isIOSPaltform()) {
+            //   window.location = 'https://apps.apple.com/app/tapnow-widget-for-friends/id1612005183'
+            // } else {
+            //   window.location = 'https://play.google.com/store/apps/details?id=com.sangotech.tapnow'
+            // }
+
+            window.location = `com.sango.widgetphoto://?link=${targetLink}`
           } else {
             window.location = this.openAppLink
           }
